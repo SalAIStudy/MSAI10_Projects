@@ -1,50 +1,61 @@
-# MSAI10_Projects — AI Course Assignments
+# Results and Outputs
 
-**Author:** Salma Areef Syed  
-**Course:** MSAI10 — Artificial Intelligence  
-**Year:** 2025
+This folder contains the results, screenshots, and performance metrics from all five AI course modules.  
+Each subfolder represents one module and includes visual outputs or summary files that show what was achieved.
 
-This repository is the single source of truth for assignments and mini-projects completed for the AI course.  
-Each module has its own folder under `modules/` and contains notebooks, scripts, data samples, reports, and results.
+---
 
-## Modules included
-- Module 1 — Python Essentials (`modules/module1-python-essentials/`)
-- Module 2 — Data Processing for AI (`modules/module2-data-processing/`)
-- Module 3 — Statistical Foundations for AI (`modules/module3-statistical-foundations/`)
-- Module 4 — Machine Learning (`modules/module4-machine-learning/`)
-- Module 5 — Linear Algebra (`modules/module5-linear-algebra/`)
+## Folder Structure
+results/
+├── module1-python-essentials/
+│ ├── screenshots/
+│ └── README.md
+├── module2-data-processing/
+│ ├── charts/
+│ └── metrics.csv
+├── module3-statistical-foundations/
+│ ├── plots/
+│ └── summary.md
+├── module4-machine-learning/
+│ ├── screenshots/
+│ ├── metrics.csv
+│ └── confusion_matrix.png
+└── module5-linear-algebra/
+├── screenshots/
+└── results_summary.md
 
-## How to reproduce / run
-1. Clone the repository:
-```bash
-git clone https://github.com/SalAIStudy/MSAI10_Projects.git
-cd MSAI10_Projects
-```
 
-2. Create and activate a virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate   # macOS / Linux
-venv\Scripts\activate.bat # Windows (PowerShell)
-```
+---
 
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+## About Each Module
+| Module | Example Outputs |
+|:-------|:----------------|
+| **Python Essentials** | Console outputs, small algorithm screenshots |
+| **Data Processing for AI** | Data visualizations, correlation heatmaps |
+| **Statistical Foundations for AI** | Probability plots, hypothesis test summaries |
+| **Machine Learning** | Model accuracy, confusion matrices, charts |
+| **Linear Algebra** | Vector and matrix operation visuals, gradient results |
 
-4. Open any notebook:
-```bash
-jupyter notebook modules/module4-machine-learning/assignment.ipynb
-```
+---
 
-## Submission checklist
-- README.md (root) — this file
-- modules/ — contains all module notebooks, scripts and data samples
-- docs/design_document.md — design summary
-- results/ — screenshots and metric summaries
-- LICENSE, .gitignore, requirements.txt, submission_instructions.md
+## How to Add or Update Results
+- Save any charts or screenshots (`.png`, `.jpg`) from notebooks.
+- Export numeric results like accuracy or loss as `.csv` or `.txt`.
+- Write a short `summary.md` in each module’s results folder explaining what the outputs show.
 
-## Notes
-- Large datasets and trained models are intentionally excluded. Where appropriate, small sample data is included under each module's `data/` folder and instructions are provided to reproduce results.
-- If a notebook contains database or heavy-training code, the exported script has that code commented out. Original code cells are preserved for instructor review.
+**Example:**
+results/module4-machine-learning/screenshots/confusion_matrix.png
+results/module4-machine-learning/metrics.csv
+results/module4-machine-learning/results_summary.md
+
+
+---
+
+## Good Practices
+- Keep files small — avoid uploading large raw data or model files.
+- Use clear names like `accuracy_plot.png` or `eda_summary.csv`.
+- Each module’s results folder should have a short `README.md` describing its outputs.
+
+---
+
+_Last updated: October 2025_
