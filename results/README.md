@@ -1,71 +1,50 @@
-# Results and Outputs — MSAI10_Projects
+# MSAI10_Projects — AI Course Assignments
 
-This folder contains outputs, screenshots, metrics, and visual results generated from each AI course module.
+**Author:** Salma Areef Syed  
+**Course:** MSAI10 — Artificial Intelligence  
+**Year:** 2025
 
-Each subfolder corresponds to one of the five modules in this repository.
----
+This repository is the single source of truth for assignments and mini-projects completed for the AI course.  
+Each module has its own folder under `modules/` and contains notebooks, scripts, data samples, reports, and results.
 
-## 📁 Folder Structure
-results/
-├─ module1-python-essentials/
-│ ├─ screenshots/
-│ └─ README.md
-├─ module2-data-processing/
-│ ├─ charts/
-│ └─ metrics.csv
-├─ module3-statistical-foundations/
-│ ├─ plots/
-│ └─ summary.md
-├─ module4-machine-learning/
-│ ├─ screenshots/
-│ ├─ metrics.csv
-│ └─ confusion_matrix.png
-└─ module5-linear-algebra/
-├─ screenshots/
-└─ results.md
+## Modules included
+- Module 1 — Python Essentials (`modules/module1-python-essentials/`)
+- Module 2 — Data Processing for AI (`modules/module2-data-processing/`)
+- Module 3 — Statistical Foundations for AI (`modules/module3-statistical-foundations/`)
+- Module 4 — Machine Learning (`modules/module4-machine-learning/`)
+- Module 5 — Linear Algebra (`modules/module5-linear-algebra/`)
 
----
+## How to reproduce / run
+1. Clone the repository:
+```bash
+git clone https://github.com/SalAIStudy/MSAI10_Projects.git
+cd MSAI10_Projects
+```
 
-## 🧠 Purpose of Each Folder
+2. Create and activate a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate   # macOS / Linux
+venv\Scripts\activate.bat # Windows (PowerShell)
+```
 
-| Module | Example Outputs |
-|:--|:--|
-| **Python Essentials** | Console screenshots, simple algorithm outputs |
-| **Data Processing for AI** | Data distribution plots, correlation heatmaps, EDA results |
-| **Statistical Foundations for AI** | Probability plots, hypothesis test results, summary stats |
-| **Machine Learning** | Model performance metrics, confusion matrix, accuracy/F1 charts |
-| **Linear Algebra** | Matrix operation visualizations, vector transformation results |
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
----
+4. Open any notebook:
+```bash
+jupyter notebook modules/module4-machine-learning/assignment.ipynb
+```
 
-## 🧩 How to Update Results
+## Submission checklist
+- README.md (root) — this file
+- modules/ — contains all module notebooks, scripts and data samples
+- docs/design_document.md — design summary
+- results/ — screenshots and metric summaries
+- LICENSE, .gitignore, requirements.txt, submission_instructions.md
 
-1. After running any notebook, export charts or screenshots to `.png` or `.jpg`.
-2. Save numeric results (metrics, summaries) as `.csv` or `.txt` files.
-3. Place them inside the appropriate subfolder under `results/`.
-
-**Example:**
-results/module4-machine-learning/screenshots/confusion_matrix.png
-results/module4-machine-learning/metrics.csv
-
----
-
-## ✅ Recommended Files to Include for Submission
-- Screenshots of outputs or plots
-- Metrics file (e.g., accuracy, RMSE, precision, recall)
-- Summary markdown file describing results in simple words
-- Optional: link or reference to model files (not required if excluded via .gitignore)
----
-
-## 🧾 Notes
-- Keep files lightweight (avoid uploading huge raw data or model files).  
-- Use clear, descriptive filenames (e.g., `linear_regression_plot.png` or `eda_summary.csv`).  
-- Each module’s folder should include a small `README.md` summarizing its results.
-
----
-
-**Author:** Salma Areef Syed
-**Repository:** [SalAIStudy/MSAI10_Projects](https://github.com/SalAIStudy/MSAI10_Projects)
-
-
-
+## Notes
+- Large datasets and trained models are intentionally excluded. Where appropriate, small sample data is included under each module's `data/` folder and instructions are provided to reproduce results.
+- If a notebook contains database or heavy-training code, the exported script has that code commented out. Original code cells are preserved for instructor review.
