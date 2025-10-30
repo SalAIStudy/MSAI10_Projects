@@ -1,23 +1,32 @@
-# Module 01 : Programming - Python Essentials
+# Module 1: Python Essentials
 
-## 📚 Overview
-This folder contains all files related to the **Python Essentials** assignment from the AI course.  
-It includes the main Jupyter Notebook, scripts, sample data, and result outputs.
+This folder contains two cleaned assignments for the Python Essentials module.
 
-## 🧠 Learning Objectives
-- key objectives for this module,
-  - Learn Python syntax and basic data structures  
-  - Practice loops, functions, and file handling  
+## Files included
 
-## 📁 Folder Contents
-| File/Folder | Description |
-|--------------|-------------|
-| `assignment.ipynb` | Main notebook with explanations and code |
-| `solution.py` | Python script version of the assignment (optional) |
-| `data/` | Sample or synthetic dataset used for demonstration |
-| `report.md` or `report.pdf` | Short summary or analysis report |
-| `results/` | Charts, screenshots, or metrics for this module |
+- `assignment01.ipynb` — Cleaned notebook for Assignment 1
+- `solution01.py` — Script exported from the cleaned notebook
+- `report_assignment_01.md` — Short report for Assignment 1
 
-## ⚙️ How to Run
-cd MSAI10_Projects/module1-python-essentials/
-jupyter notebook assignment.ipynb
+- `assignment02.ipynb` — Cleaned notebook for Assignment 2
+- `solution02.py` — Script exported from the cleaned notebook
+- `report_assignment_02.md` — Short report for Assignment 2
+
+## How to run
+
+1. Create and activate a virtual environment
+```bash
+python -m venv venv
+source venv/bin/activate  # on Windows use venv\Scripts\activate
+pip install -r ../../../requirements.txt
+```
+
+2. Open the notebook in Jupyter:
+```bash
+jupyter notebook assignment01.ipynb
+```
+
+3. Or run the script directly:
+```bash
+python solution01.py
+```
