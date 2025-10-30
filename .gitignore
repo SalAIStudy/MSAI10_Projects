@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Python packaging
+dist/
+build/
+*.egg-info/
+
+# Models & data (keep out of repo if large)
+saved_models/
+models/
+data/
+
+# Logs and misc
+*.log
+*.csv
+
+# OS files
+.DS_Store
+Thumbs.db
